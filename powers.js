@@ -4,9 +4,30 @@
 
 function flightHandlerFunction () {
         let element = document.getElementById("flight");
-            element.classList.toggle("enabled");
+            element.classList.remove("disabled");
+            element.classList.add("enabled");
+        }        
+function mindreadingHandlerFunction () {
+        let element = document.getElementById("mindreading");
+            element.classList.remove("disabled");
+            element.classList.add("enabled");
+        }        
+function xrayHandlerFunction () {
+        let element = document.getElementById("xray");
+            element.classList.remove("disabled");
+            element.classList.add("enabled");
         }        
 document.querySelector("#activate-flight").addEventListener("click", function() {
     flightHandlerFunction();
-}
-)
+})
+
+document.querySelector("#activate-mindreading").addEventListener("click", function() {
+    mindreadingHandlerFunction();
+})
+
+document.querySelector("#activate-xray").addEventListener("click", function() {
+    xrayHandlerFunction();
+
+    })
+
+
