@@ -30,4 +30,32 @@ document.querySelector("#activate-xray").addEventListener("click", function() {
 
     })
 
+document.querySelector("#activate-all").addEventListener("click",
+    function activateAllHandlerFunction () {
+        let element1 = document.getElementById("flight");
+            element1.classList.remove("disabled");
+            element1.classList.add("enabled");
+        let element2 = document.getElementById("mindreading");
+            element2.classList.remove("disabled");
+            element2.classList.add("enabled");
+        let element3 = document.getElementById("xray");
+            element3.classList.remove("disabled");
+            element3.classList.add("enabled");
+
+    })
+document.querySelector("#deactivate-all").addEventListener("click",
+    function deactivateAllHandlerFunction () {
+        let element1 = document.getElementById("flight");
+            element1.classList.remove("enabled");
+            element1.classList.add("disabled");
+        let element2 = document.getElementById("mindreading");
+            element2.classList.remove("enabled");
+            element2.classList.add("disabled");
+        let element3 = document.getElementById("xray");
+            element3.classList.remove("enabled");
+            element3.classList.add("disabled");
+
+    })
+
+
 
